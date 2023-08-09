@@ -1,0 +1,206 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2d; /* Dark Background */
+    color: #d1d1e0; /* Light text for contrast */
+}
+
+#certifications {
+    background-color: #282843; /* Dark purple shade */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+#certifications h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #d1d1e0;
+}
+
+.certification {
+    background-color: #1e1e2d;
+    padding: 15px;
+    border: 1px solid #3f3f4f;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.certification h3 {
+    font-size: 20px;
+    margin-top: 0;
+    color: #d1d1e0;
+}
+
+.certification p {
+    margin: 10px 0;
+    color: #a1a1b0;
+}
+
+.certification p strong {
+    color: #e1e1f0;
+    font-weight: 600;
+}
+
+.certification:nth-child(odd) {
+    background-color: #282843;
+}
+
+section {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #282843; /* Dark purple shade */
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2, h3 {
+    color: #c084fc; /* Brighter Purple for Headings */
+    margin-top: 0;
+}
+
+#home {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #c084fc; /* Brighter Purple */
+    color: #1e1e2d;
+}
+
+#about, #skills, #projects, #experience, #contact {
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+li {
+    background-color: #3f3f4f; /* Slightly lighter than the background */
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1e1e2d; /* Matching with body background */
+    color: #a1a1b0;
+}
+
+@media (max-width: 768px) {
+    section {
+        margin: 20px 10px;
+    }
+}
+
+a {
+    color: #c084fc; /* Purple link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e1a1fc; /* Lighter purple for hover */
+}
+
+.job, .education-item {
+    margin-bottom: 20px;
+}
+
+/* Bootstrap Card Styling */
+.card {
+    background-color: #282843; /* Dark purple shade */
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title, .card-subtitle {
+    color: #c084fc; /* Brighter Purple */
+}
+
+/* List Group Styling */
+.list-group-item {
+    background-color: #1e1e2d;
+    border: none;
+    color: #d1d1e0;
+}
+
+.list-group-item:hover {
+    background-color: #3f3f4f;
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+    padding: 60px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Material UI Icons */
+.material-icons {
+    vertical-align: middle;
+    margin-right: 5px;
+    color: #c084fc; /* Brighter Purple */
+}
+
+/* Adjust link styles within a card */
+.card a {
+    color: #a1a1b0; /* Link color inside cards */
+}
+
+.card a:hover {
+    text-decoration: underline;
+    color: #c084fc; /* Purple link color for hover inside cards */
+}
+
+/* Introduction Styling */
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #282843, #1e1e2d);
+    color: #c084fc; /* Purple to match your theme */
+    padding: 5em 0;
+    position: relative;
+    overflow: hidden; /* To ensure animation stays within the section */
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.intro-heading {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    opacity: 0; /* Initially invisible */
+    transform: translateY(-30px); /* Initially moved up */
+    animation: fadeInUp 1.2s forwards 0.8s; /* Slower animation and increased delay for smoother effect */
+}
+
+.intro-text {
+    color: #fff;
+    font-size: 1.2em;
+    max-width: 800px;
+    text-align: center;
+    opacity: 0; /* Initially invisible */
+    transform: translateY(30px); /* Initially moved down */
+    animation: fadeInUp 1.2s forwards 1.3s; /* Slower animation and increased delay for smoother effect */
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
