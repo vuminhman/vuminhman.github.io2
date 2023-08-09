@@ -14,6 +14,43 @@
 </head>
 
 <body>
+    <nav id="sticky-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Man Vu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#core-competentencies">Core Competencies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
     <!-- Introduction -->
     <section id="home" class="intro-section">
         <h1 class="intro-heading">Hello, I'm Man Vu.</h1>
@@ -25,7 +62,7 @@
     </section>
     <!-- Personal Overview -->
     <section id="about" class="my-5">
-        <div class="card shadow-lg rounded">
+        <div class="card rounded">
             <div class="card-body">
                 <h2 class="card-title display-5">About</h2>
                 <p class="card-text lead">
@@ -42,7 +79,7 @@
         <h2>Core Competentencies</h2>
 
         <!-- Technical Skills & Expertise -->
-        <section id="skills" class="mb-5">
+        <div id="skills" class="mb-5">
             <h2 class="display-5 mb-4">Skills</h2>
             <div>
                 <span class="badge badge-primary p-2 m-1">Project Management</span>
@@ -51,20 +88,20 @@
                 <span class="badge badge-warning p-2 m-1">Automated Testing</span>
                 <span class="badge badge-secondary p-2 m-1">Problem Solving & Team Collaboration</span>
             </div>
-        </section>
+        </div>
 
         <!-- Programming Proficiencies -->
-        <section id="languages" class="mb-5">
+        <div id="languages" class="mb-5">
             <h2 class="display-5 mb-4">Programming Languages</h2>
             <div>
                 <span class="badge badge-light p-2 m-1">HTML, CSS, CSS3</span>
                 <span class="badge badge-dark p-2 m-1">PHP, JavaScript, jQuery</span>
                 <span class="badge badge-danger p-2 m-1">Python, Java, Swift</span>
             </div>
-        </section>
+        </div>
 
         <!-- Technology Stack -->
-        <section id="technologies" class="mb-5">
+        <div id="technologies" class="mb-5">
             <h2 class="display-5 mb-4">Technologies</h2>
 
             <!-- Databases -->
@@ -100,284 +137,329 @@
             <div>
                 <span class="badge badge-light p-2 m-1">Git</span>
             </div>
+        </div>
+    </section>
+
+    <!-- Experience & Roles -->
+    <section id="experience">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+            <h3>Software Developer at ABELSoft Inc.</h3>
+            <h4>September 2021 - Present (2 years)</h4>
+
+            <p>Applied strategic planning, comprehensive project management, and advanced technical and programming
+                expertise to innovate and refine applications for a top-tier provider of clinical and practice
+                management software. Pioneered solutions to rectify application underperformance, enhancing both
+                efficiency and productivity.</p>
+
+            <!-- Key Projects and Achievements -->
+            <h5>Key Projects and Achievements:</h5>
+            <ul>
+                <li>Quickly responded to managed urgent fires and customer issues.</li>
+                <li>Enhanced efficiency and reduced load time of periodontal charting tab.</li>
+                <li>Utilized Test-Driven Development best practices to drive continuous improvement in features and
+                    usability.</li>
+                <li>Conducted rigorous investigation on customer data records to resolve production bugs; improved
+                    integrity of data.</li>
+                <li>Authored a comprehensive developer manual, fostering quicker onboarding and heightening developer
+                    performance.</li>
+                <li>Vigilantly monitored and maintained server health ensuring optimal operation through Azure DevOps.
+                </li>
+            </ul>
+
+            <!-- Test-Driven Software Development -->
+            <h5>Test-Driven Software Development:</h5>
+            <ul>
+                <li>Demonstrated high flexibility and adaptability in a high-pressure and dynamic team environment.</li>
+                <li>Undertook work in diverse areas such as:
+                    <ul>
+                        <li>Portal development</li>
+                        <li>C/C++ legacy code</li>
+                        <li>Charting & clinical sectors</li>
+                        <li>Onboarding/updating script issues</li>
+                    </ul>
+                </li>
+                <li>Showed significant technical growth, undertaking complex architectural tasks.</li>
+                <li>Collaborated with senior architects.</li>
+            </ul>
+
+            <!-- Requirements, Code and QC Reviews -->
+            <h5>Requirements, Code, and QC Reviews:</h5>
+            <ul>
+                <li>Consistently followed company processes for code and QC reviews.</li>
+                <li>Ensured high quality of completed work.</li>
+                <li>Provided QC teams with scripts for testing.</li>
+                <li>Documented investigative findings and answered relevant queries.</li>
+            </ul>
+
+            <!-- Tier 3 Defect Analysis -->
+            <h5>Tier 3 Defect Analysis:</h5>
+            <ul>
+                <li>Led the analysis of Tier 3 defects, which often required extensive investigation.</li>
+                <li>Employed creativity and innovation in finding optimal solutions.</li>
+                <li>Ensured thorough documentation of findings and thought processes to assist external teams and QA.
+                </li>
+            </ul>
+
+            <!-- DevOps Duties -->
+            <h5>DevOps and On-Call Duties:</h5>
+            <ul>
+                <li>Undertook DevOps on-call responsibilities over the past year.</li>
+                <li>Addressed critical situations during off-hours, such as unexpected outages and release issues.</li>
+                <li>Efforts led to minimized downtime for the team and clients.</li>
+                <li>Ensured optimal data integrity and system performance.</li>
+            </ul>
+        </div>
+
+        <!-- ... More Experience sections ... -->
+    </section>
+    <section id="projects">
+        <h2>Notable Projects</h2>
+
+        <div class="project">
+            <h3>Clinical Note Utility</h3>
+
+
+            <h4>Productivity Application | ABELSoft Inc.</h4>
+            <!-- Project Details -->
+            <ul>
+                <li>
+                    <strong>Description:</strong>
+                    Developed a standalone utility in C# to automate compiling and
+                    resolution of conflicted doctor’s notes upon customer onboarding by
+                    using Diff algorithm, saving significant time and human resources.
+                </li>
+                <li><strong>Technologies Used:</strong> C#, WinForm, OfficeXML, DiffPlex, MSSQL</li>
+                <li>
+                    <strong>Challenges & Achievements:</strong> Initially faced architectural challenges in 2020.
+                    However, in 2023, with improved architectural understanding, I re-architected the solution, leading
+                    to reusable code and enhanced maintainability.
+                </li>
+                <li>
+                    <strong>Impact:</strong> The utility revolutionized the clinical note resolution process, saving
+                    significant time and resources. Post improvements in 2023, the diff algorithm enhanced readability,
+                    aiding stakeholders in decision-making regarding note restoration. It positively impacted the entire
+                    Development department.
+                </li>
+                <li>
+                    <strong>Contribution:</strong> I led the project. While another developer, Sean, initially
+                    contributed an algorithm, my enhanced version replaced it. The new algorithm utilized C# for data
+                    cleaning and classifying insert, update, and delete statements, over the original T-SQL based
+                    approach.
+                </li>
+                <li>
+                    <strong>Feedback:</strong> The project received accolades from the CTO, development manager, and
+                    team lead. A manager's commendation highlighted the project's impact, my technical prowess, and
+                    problem-solving skills.
+                </li>
+                <li>
+                    <strong>Duration:</strong> Initially developed in a week. However, significant improvements were
+                    made over 2-3 weeks, enhancing its efficiency and effectiveness.
+                </li>
+                <li>
+                    <strong>Learnings:</strong> Emphasized the importance of creativity in repetitive tasks and the
+                    value of discussing opportunities with peers for enhanced ideation.
+                </li>
+                <li>
+                    <strong>Future Scope:</strong> Explored the integration of ChatGPT for note restoration
+                    decision-making, but it was abandoned due to data privacy concerns.
+                </li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>English Dictionary</h3>
+            <h4>Data Crawler | Personal Project</h4>
+            <ul>
+                <li>
+                    <strong>Description:</strong>
+                    Developed a Python tool to crawl all word entries from renowned English dictionaries, namely
+                    Cambridge, Oxford, and Longman. This tool was primarily built to accumulate a comprehensive dataset
+                    for subsequent Natural Language Processing (NLP) endeavors.
+                </li>
+                <li><strong>Objective:</strong> To gather a rich dataset from reputable dictionaries for advanced
+                    linguistic research and NLP projects.</li>
+                <li><strong>Technologies Used:</strong> Python, Beautiful Soup, Requests, MongoDB.</li>
+                <li><strong>Methodology:</strong> Used web scraping techniques to target specific elements of the
+                    dictionaries' web pages and store the retrieved information in a structured format.</li>
+                <li><strong>Challenges:</strong> Faced issues with dynamic content loading on some pages and implemented
+                    workarounds using asynchronous requests.</li>
+                <li><strong>Results:</strong> Successfully crawled over 100,000 word entries with pronunciation, word
+                    usage examples, and synonyms/antonyms, providing a robust dataset for NLP tasks.</li>
+                <li><strong>Applications and Future Enhancements:</strong> This dataset can be used for linguistic
+                    research, building language models, or even creating a new dictionary application.</li>
+                <!-- You can continue adding more points as relevant -->
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>IELTS Question Crawler</h3>
+
+            <h4>Data Crawler | Personal Project</h4>
+
+            <!-- Project Details -->
+            <ul>
+                <li><strong>Technologies Used:</strong> Python, basic crawling techniques</li>
+                <li>
+                    <strong>Description:</strong> Developed a Python-based data crawler to aggregate Writing and
+                    Speaking questions from reputable IELTS sources. The questions are systematically categorized by
+                    question types, topics, test dates, and themes, and are currently hosted on Notion.
+                </li>
+                <li>
+                    <strong>Impact:</strong> The project garnered immense attention from IELTS communities, amassing
+                    over 20K reactions across different Facebook sources. This recognition transformed my online
+                    presence, boosting my Facebook followers to over 5K.
+                </li>
+                <li>
+                    <strong>Learnings:</strong> Emphasized the importance of seizing opportunities to be innovative and
+                    creative in the projects undertaken.
+                </li>
+            </ul>
+        </div>
+
+
+    </section>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+        <!-- Mohawk College - Advanced Diploma in Computer Software Technology -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Advanced Diploma in Computer Software Technology - Software Development</h3>
+                <h4 class="card-subtitle mb-2 text-muted">Mohawk College</h4>
+                <span class="d-block mb-3">Jan 2019 - Aug 2021</span>
+                <ul>
+                    <li>Expedited graduation, completing a three-year program in just 2 years and 8 months due to
+                        exemplary performance.</li>
+                    <li>Graduated with honors, boasting a commendable GPA exceeding 90%.</li>
+                    <li>Focused coursework encompassed data structures & algorithms, machine learning, and cutting-edge
+                        web development techniques.</li>
+                    <li>Hands-on experience with technologies like AWS, .NET Core, SQL Databases, Node.js, React,
+                        Angular, and Vue.</li>
+                    <li>Academic achievements included perfect scores in data structures & algorithms and front-end web
+                        development, along with a near-perfect score in machine learning.</li>
+                    <li>Actively participated in Hamilton JavaScript meetups and The New Developers’ (TND) community
+                        events.</li>
+                    <li>Underwent three enriching co-op terms and secured an 8-month contract with ABELSoft,
+                        contributing significantly to real-world projects.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mohawk College - Diploma in Computer Software Technology -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Diploma in Computer Software Technology - Software Support</h3>
+                <h4 class="card-subtitle mb-2 text-muted">Mohawk College</h4>
+                <span class="d-block mb-3">Jan 2019 - Dec 2020</span>
+            </div>
+        </div>
+
+        <!-- Conestoga College - Advanced Diploma in Computer Engineering Technology -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Advanced Diploma in Computer Engineering Technology/Technician</h3>
+                <h4 class="card-subtitle mb-2 text-muted">Conestoga College</h4>
+                <span class="d-block mb-3">2016 - 2017</span>
+                <p class="card-text">Grade: 3.80</p>
+                <ul>
+                    <li>Acquired a robust foundation in programming languages including Assembly, C, and C++.</li>
+                    <li>Explored advanced concepts in C++ such as pointers, memory management, and object-oriented
+                        design patterns.</li>
+                    <li>Achieved an outstanding grade of 96% in C++ programming.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Academic Projects -->
+        <section id="academic-projects">
+            <h2>Academic Projects</h2>
+
+            <div class="project">
+                <h3>Learning English App</h3>
+                <p>
+                    Architected an interactive web platform designed to assist non-native English speakers in honing
+                    their linguistic skills. Built using React for the frontend, Node.js for the backend, and hosted on
+                    AWS.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Honors & Awards -->
+        <section id="awards" class="my-5">
+            <h2>Honors & Awards</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Dean's Honours List (x5)</li>
+                <li class="list-group-item">Awarded 2021 guard.me Post-secondary Scholarship for Academic Excellence
+                </li>
+            </ul>
         </section>
     </section>
 
-<!-- Experience & Roles -->
-<section id="experience">
-    <h2>Professional Experience</h2>
-
-    <div class="job">
-        <h3>Software Developer at ABELSoft Inc.</h3>
-        <h4>September 2021 - Present (2 years)</h4>
-
-        <p>Applied strategic planning, comprehensive project management, and advanced technical and programming expertise to innovate and refine applications for a top-tier provider of clinical and practice management software. Pioneered solutions to rectify application underperformance, enhancing both efficiency and productivity.</p>
-
-        <!-- Key Projects and Achievements -->
-        <h5>Key Projects and Achievements:</h5>
-        <ul>
-            <li>Quickly responded to managed urgent fires and customer issues.</li>
-            <li>Enhanced efficiency and reduced load time of periodontal charting tab.</li>
-            <li>Utilized Test-Driven Development best practices to drive continuous improvement in features and usability.</li>
-            <li>Conducted rigorous investigation on customer data records to resolve production bugs; improved integrity of data.</li>
-            <li>Authored a comprehensive developer manual, fostering quicker onboarding and heightening developer performance.</li>
-            <li>Vigilantly monitored and maintained server health ensuring optimal operation through Azure DevOps.</li>
-        </ul>
-
-        <!-- Test-Driven Software Development -->
-        <h5>Test-Driven Software Development:</h5>
-        <ul>
-            <li>Demonstrated high flexibility and adaptability in a high-pressure and dynamic team environment.</li>
-            <li>Undertook work in diverse areas such as:
-                <ul>
-                    <li>Portal development</li>
-                    <li>C/C++ legacy code</li>
-                    <li>Charting & clinical sectors</li>
-                    <li>Onboarding/updating script issues</li>
-                </ul>
-            </li>
-            <li>Showed significant technical growth, undertaking complex architectural tasks.</li>
-            <li>Collaborated with senior architects.</li>
-        </ul>
-
-        <!-- Requirements, Code and QC Reviews -->
-        <h5>Requirements, Code, and QC Reviews:</h5>
-        <ul>
-            <li>Consistently followed company processes for code and QC reviews.</li>
-            <li>Ensured high quality of completed work.</li>
-            <li>Provided QC teams with scripts for testing.</li>
-            <li>Documented investigative findings and answered relevant queries.</li>
-        </ul>
-
-        <!-- Tier 3 Defect Analysis -->
-        <h5>Tier 3 Defect Analysis:</h5>
-        <ul>
-            <li>Led the analysis of Tier 3 defects, which often required extensive investigation.</li>
-            <li>Employed creativity and innovation in finding optimal solutions.</li>
-            <li>Ensured thorough documentation of findings and thought processes to assist external teams and QA.</li>
-        </ul>
-
-        <!-- DevOps Duties -->
-        <h5>DevOps and On-Call Duties:</h5>
-        <ul>
-            <li>Undertook DevOps on-call responsibilities over the past year.</li>
-            <li>Addressed critical situations during off-hours, such as unexpected outages and release issues.</li>
-            <li>Efforts led to minimized downtime for the team and clients.</li>
-            <li>Ensured optimal data integrity and system performance.</li>
-        </ul>
-    </div>
-
-    <!-- ... More Experience sections ... -->
-</section>
-    <section id="projects">
-      <h2>Notable Projects</h2>
-
-      <div class="project">
-        <h3>Clinical Note Utility</h3>
-
-
-        <h4>Productivity Application | ABELSoft Inc.</h4>
-        <!-- Project Details -->
-        <ul>
-            <li>
-                <strong>Description:</strong>
-                Developed a standalone utility in C# to automate compiling and
-                resolution of conflicted doctor’s notes upon customer onboarding by
-                using Diff algorithm, saving significant time and human resources.
-            </li>
-            <li><strong>Technologies Used:</strong> C#, WinForm, OfficeXML, DiffPlex, MSSQL</li>
-            <li>
-                <strong>Challenges & Achievements:</strong> Initially faced architectural challenges in 2020. However, in 2023, with improved architectural understanding, I re-architected the solution, leading to reusable code and enhanced maintainability.
-            </li>
-            <li>
-                <strong>Impact:</strong> The utility revolutionized the clinical note resolution process, saving significant time and resources. Post improvements in 2023, the diff algorithm enhanced readability, aiding stakeholders in decision-making regarding note restoration. It positively impacted the entire Development department.
-            </li>
-            <li>
-                <strong>Contribution:</strong> I led the project. While another developer, Sean, initially contributed an algorithm, my enhanced version replaced it. The new algorithm utilized C# for data cleaning and classifying insert, update, and delete statements, over the original T-SQL based approach.
-            </li>
-            <li>
-                <strong>Feedback:</strong> The project received accolades from the CTO, development manager, and team lead. A manager's commendation highlighted the project's impact, my technical prowess, and problem-solving skills.
-            </li>
-            <li>
-                <strong>Duration:</strong> Initially developed in a week. However, significant improvements were made over 2-3 weeks, enhancing its efficiency and effectiveness.
-            </li>
-            <li>
-                <strong>Learnings:</strong> Emphasized the importance of creativity in repetitive tasks and the value of discussing opportunities with peers for enhanced ideation.
-            </li>
-            <li>
-                <strong>Future Scope:</strong> Explored the integration of ChatGPT for note restoration decision-making, but it was abandoned due to data privacy concerns.
-            </li>
-        </ul>
-    </div>
-    <div class="project">
-        <h3>English Dictionary</h3>
-        <h4>Data Crawler | Personal Project</h4>
-        <ul>
-            <li>
-                <strong>Description:</strong>
-                Developed a Python tool to crawl all word entries from renowned English dictionaries, namely Cambridge, Oxford, and Longman. This tool was primarily built to accumulate a comprehensive dataset for subsequent Natural Language Processing (NLP) endeavors.
-            </li>
-            <li><strong>Objective:</strong> To gather a rich dataset from reputable dictionaries for advanced linguistic research and NLP projects.</li>
-            <li><strong>Technologies Used:</strong> Python, Beautiful Soup, Requests, MongoDB.</li>
-            <li><strong>Methodology:</strong> Used web scraping techniques to target specific elements of the dictionaries' web pages and store the retrieved information in a structured format.</li>
-            <li><strong>Challenges:</strong> Faced issues with dynamic content loading on some pages and implemented workarounds using asynchronous requests.</li>
-            <li><strong>Results:</strong> Successfully crawled over 100,000 word entries with pronunciation, word usage examples, and synonyms/antonyms, providing a robust dataset for NLP tasks.</li>
-            <li><strong>Applications and Future Enhancements:</strong> This dataset can be used for linguistic research, building language models, or even creating a new dictionary application.</li>
-            <!-- You can continue adding more points as relevant -->
-        </ul>
-    </div>
-
-    <div class="project">
-        <h3>IELTS Question Crawler</h3>
-    
-        <h4>Data Crawler | Personal Project</h4>
-    
-        <!-- Project Details -->
-        <ul>
-            <li><strong>Technologies Used:</strong> Python, basic crawling techniques</li>
-            <li>
-                <strong>Description:</strong> Developed a Python-based data crawler to aggregate Writing and Speaking questions from reputable IELTS sources. The questions are systematically categorized by question types, topics, test dates, and themes, and are currently hosted on Notion.
-            </li>
-            <li>
-                <strong>Impact:</strong> The project garnered immense attention from IELTS communities, amassing over 20K reactions across different Facebook sources. This recognition transformed my online presence, boosting my Facebook followers to over 5K.
-            </li>
-            <li>
-                <strong>Learnings:</strong> Emphasized the importance of seizing opportunities to be innovative and creative in the projects undertaken.
-            </li>
-        </ul>
-    </div>
-    
-    
-    </section>
-</section>
-
-<!-- Education -->
-<section id="education">
-    <h2>Education</h2>
-    <!-- Mohawk College - Advanced Diploma in Computer Software Technology -->
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3 class="card-title">Advanced Diploma in Computer Software Technology - Software Development</h3>
-            <h4 class="card-subtitle mb-2 text-muted">Mohawk College</h4>
-            <span class="d-block mb-3">Jan 2019 - Aug 2021</span>
-            <ul>
-                <li>Expedited graduation, completing a three-year program in just 2 years and 8 months due to exemplary performance.</li>
-                <li>Graduated with honors, boasting a commendable GPA exceeding 90%.</li>
-                <li>Focused coursework encompassed data structures & algorithms, machine learning, and cutting-edge web development techniques.</li>
-                <li>Hands-on experience with technologies like AWS, .NET Core, SQL Databases, Node.js, React, Angular, and Vue.</li>
-                <li>Academic achievements included perfect scores in data structures & algorithms and front-end web development, along with a near-perfect score in machine learning.</li>
-                <li>Actively participated in Hamilton JavaScript meetups and The New Developers’ (TND) community events.</li>
-                <li>Underwent three enriching co-op terms and secured an 8-month contract with ABELSoft, contributing significantly to real-world projects.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Mohawk College - Diploma in Computer Software Technology -->
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3 class="card-title">Diploma in Computer Software Technology - Software Support</h3>
-            <h4 class="card-subtitle mb-2 text-muted">Mohawk College</h4>
-            <span class="d-block mb-3">Jan 2019 - Dec 2020</span>
-        </div>
-    </div>
-
-    <!-- Conestoga College - Advanced Diploma in Computer Engineering Technology -->
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3 class="card-title">Advanced Diploma in Computer Engineering Technology/Technician</h3>
-            <h4 class="card-subtitle mb-2 text-muted">Conestoga College</h4>
-            <span class="d-block mb-3">2016 - 2017</span>
-            <p class="card-text">Grade: 3.80</p>
-            <ul>
-                <li>Acquired a robust foundation in programming languages including Assembly, C, and C++.</li>
-                <li>Explored advanced concepts in C++ such as pointers, memory management, and object-oriented design patterns.</li>
-                <li>Achieved an outstanding grade of 96% in C++ programming.</li>
-            </ul>
-        </div>
-    </div>
-  
-  <!-- Academic Projects -->
-  <section id="academic-projects">
-    <h2>Academic Projects</h2>
-  
-    <div class="project">
-      <h3>Learning English App</h3>
-      <p>
-        Architected an interactive web platform designed to assist non-native English speakers in honing their linguistic skills. Built using React for the frontend, Node.js for the backend, and hosted on AWS.
-      </p>
-    </div>
-  </section>
-  
-
-  <!-- Honors & Awards -->
-  <section id="awards" class="my-5">
-    <h2>Honors & Awards</h2>
-    <ul class="list-group">
-        <li class="list-group-item">Dean's Honours List (x5)</li>
-        <li class="list-group-item">Awarded 2021 guard.me Post-secondary Scholarship for Academic Excellence</li>
-    </ul>
-</section>
-</section>
-
 
     <!-- Certifications -->
-<section id="certifications" class=" mt-5">
-    <h2 class="mb-4">Certifications</h2>
+    <section id="certifications" class=" mt-5">
+        <h2 class="mb-4">Certifications</h2>
 
-    <div class="card mb-3">
-        <div class="card-body">
-            <h3 class="card-title"><i class="material-icons">language</i> IELTS Academic 8.0 Overall</h3>
-            <p class="card-text">British Council IELTS (International English Language Testing System)</p>
-            <span class="d-block mb-2">Issued: Jun 2023 · Expires: Jun 2025</span>
-            <p>Credential ID: 23VN502945VUM028A</p>
-            <p>Skills: Communication, English</p>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title"><i class="material-icons">language</i> IELTS Academic 8.0 Overall</h3>
+                <p class="card-text">British Council IELTS (International English Language Testing System)</p>
+                <span class="d-block mb-2">Issued: Jun 2023 · Expires: Jun 2025</span>
+                <p>Credential ID: 23VN502945VUM028A</p>
+                <p>Skills: Communication, English</p>
+            </div>
         </div>
-    </div>
 
-    <div class="card mb-3">
-        <div class="card-body">
-            <h3 class="card-title"><i class="material-icons">language</i> IELTS General Training 8.5 Overall</h3>
-            <p class="card-text">British Council IELTS (International English Language Testing System)</p>
-            <span class="d-block mb-2">Issued: Apr 2023 · Expires: Apr 2025</span>
-            <p>Credential ID: 23VN500280VUM028G</p>
-            <p>Skills: Communication</p>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title"><i class="material-icons">language</i> IELTS General Training 8.5 Overall</h3>
+                <p class="card-text">British Council IELTS (International English Language Testing System)</p>
+                <span class="d-block mb-2">Issued: Apr 2023 · Expires: Apr 2025</span>
+                <p>Credential ID: 23VN500280VUM028G</p>
+                <p>Skills: Communication</p>
+            </div>
         </div>
-    </div>
 
-    <div class="card mb-3">
-        <div class="card-body">
-            <h3 class="card-title"><i class="material-icons">computer</i> The Complete Junior to Senior Web Developer Roadmap (2021)</h3>
-            <p class="card-text">Udemy</p>
-            <span class="d-block mb-2">Issued: Sep 2021</span>
-            <p>Credential ID: UC-73553207-52c3-4dba-b6ef-a3a01abee3b9</p>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title"><i class="material-icons">computer</i> The Complete Junior to Senior Web
+                    Developer Roadmap (2021)</h3>
+                <p class="card-text">Udemy</p>
+                <span class="d-block mb-2">Issued: Sep 2021</span>
+                <p>Credential ID: UC-73553207-52c3-4dba-b6ef-a3a01abee3b9</p>
+            </div>
         </div>
-    </div>
 
-    <div class="card mb-3">
-        <div class="card-body">
-            <h3 class="card-title"><i class="material-icons">computer</i> Machine Learning & Data Science</h3>
-            <p class="card-text">Udemy</p>
-            <span class="d-block mb-2">Issued: Aug 2021</span>
-            <p>Credential ID: UC-24365787-8e5d-41da-8928-2618dff216c8</p>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title"><i class="material-icons">computer</i> Machine Learning & Data Science</h3>
+                <p class="card-text">Udemy</p>
+                <span class="d-block mb-2">Issued: Aug 2021</span>
+                <p>Credential ID: UC-24365787-8e5d-41da-8928-2618dff216c8</p>
+            </div>
         </div>
-    </div>
 
-    <div class="card mb-3">
-        <div class="card-body">
-            <h3 class="card-title"><i class="material-icons">desktop_windows</i> Microsoft Project 2019 and Project Online Desktop Essential Training</h3>
-            <p class="card-text">LinkedIn</p>
-            <span class="d-block mb-2">Issued: Sep 2020</span>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title"><i class="material-icons">desktop_windows</i> Microsoft Project 2019 and Project
+                    Online Desktop Essential Training</h3>
+                <p class="card-text">LinkedIn</p>
+                <span class="d-block mb-2">Issued: Sep 2020</span>
+            </div>
         </div>
-    </div>
 
-    <div class="card mb-3">
-        <div class="card-body">
-            <h3 class="card-title"><i class="material-icons">layers</i> Full Stack Developer Certification</h3>
-            <p class="card-text">freeCodeCamp</p>
-            <span class="d-block mb-2">Issued: Dec 2018</span>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title"><i class="material-icons">layers</i> Full Stack Developer Certification</h3>
+                <p class="card-text">freeCodeCamp</p>
+                <span class="d-block mb-2">Issued: Dec 2018</span>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Contact -->
     <section id="contact">
@@ -398,5 +480,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+
+    <!-- Custom scripts -->
+    <script src="./script.js"></script>
+</body>
 </html>

@@ -4,6 +4,13 @@ body {
     padding: 0;
     background-color: #1e1e2d; /* Dark Background */
     color: #d1d1e0; /* Light text for contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Use viewport height to ensure full coverage */
+}
+
+body {
+
 }
 
 #certifications {
@@ -203,4 +210,24 @@ a:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+#sticky-navbar {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* to ensure it appears on top of other elements */
+    transition: all 0.5s; /* smooth transition for any changes */
+}
+
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+section {
+    display: none;
+}
+
+#home {
+    display: block; /* Ensure the home section is displayed initially */
 }
