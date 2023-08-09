@@ -11,7 +11,20 @@ function handleScroll() {
 }
 
 $(document).ready(function() {
+    // Functionality for the navbar links
     $("#sticky-navbar a.nav-link").click(function(event) {
+        // Prevent the default action (i.e., jumping to the section)
+        event.preventDefault();
+        
+        // Hide all sections
+        $("section").hide();
+
+        // Show the targeted section
+        $($(this).attr("href")).show();
+    });
+
+    // Functionality for the next section buttons
+    $(".btn-next-section").click(function(event) {
         // Prevent the default action (i.e., jumping to the section)
         event.preventDefault();
         

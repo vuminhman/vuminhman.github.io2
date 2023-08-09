@@ -231,3 +231,16 @@ section {
 #home {
     display: block; /* Ensure the home section is displayed initially */
 }
+
+.btn-next-section {
+    margin: auto;
+    background-color: #6c19bfb8; /* Dark Purple */
+    color: #fff !important; /* White */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-next-section:hover {
+    background-color: #7e17ed; /* Darker Purple */
+    color: #fef8f8 !important;
+}
