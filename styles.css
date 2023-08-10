@@ -57,13 +57,11 @@ section h2 {
 }
 
 section {
-    min-width: 768px;
     max-width: 960px;
     margin: 40px auto;
     padding: 20px;
     background: linear-gradient(145deg, #282843, #1e1e2d);
     border-radius: 5px;
-    
 }
 
 h1, h2, h3 {
