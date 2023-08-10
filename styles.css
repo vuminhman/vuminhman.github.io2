@@ -20,7 +20,7 @@ body {
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
-#certifications h2 {
+section h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
@@ -57,12 +57,13 @@ body {
 }
 
 section {
+    min-width: 768px;
     max-width: 960px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #282843; /* Dark purple shade */
+    background: linear-gradient(145deg, #282843, #1e1e2d);
     border-radius: 5px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    
 }
 
 h1, h2, h3 {
@@ -189,9 +190,6 @@ a:hover {
 .intro-heading {
     font-size: 2.5em;
     margin-bottom: 1em;
-    opacity: 0; /* Initially invisible */
-    transform: translateY(-30px); /* Initially moved up */
-    animation: fadeInUp 1.2s forwards 0.8s; /* Slower animation and increased delay for smoother effect */
 }
 
 .intro-text {
@@ -199,9 +197,19 @@ a:hover {
     font-size: 1.2em;
     max-width: 800px;
     text-align: center;
+
+}
+
+.fade-in-up-animation {
     opacity: 0; /* Initially invisible */
     transform: translateY(30px); /* Initially moved down */
-    animation: fadeInUp 1.2s forwards 1.3s; /* Slower animation and increased delay for smoother effect */
+    animation: fadeInUp 1.2s forwards 0.3s; /* Slower animation and increased delay for smoother effect */
+}
+
+.fade-in-left-animation {
+    opacity: 0; /* Initially invisible */
+    transform: translateX(30px); /* Initially moved down */
+    animation: fadeInUp 1.2s forwards 0.3s; /* Slower animation and increased delay for smoother effect */
 }
 
 /* Animation */
@@ -209,6 +217,13 @@ a:hover {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -243,4 +258,23 @@ section {
 .btn-next-section:hover {
     background-color: #7e17ed; /* Darker Purple */
     color: #fef8f8 !important;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif; /* Using the Poppins font, but you can choose any font you like */
+    font-size: 24px; /* Increase the font size */
+    font-weight: 600; /* Make it semi-bold */
+    letter-spacing: 1px; /* Add some letter spacing */
+    color: #FFD700; /* A gold color, but you can choose any color you like */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar-brand:hover {
+    color: #FFFFFF; /* Change color on hover */
+    text-decoration: none; /* Remove underline on hover */
 }

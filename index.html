@@ -29,7 +29,7 @@
                     <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#core-competentencies">Core Competencies</a>
+                    <a class="nav-link" href="#core-competencies">Core Competencies</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#experience">Experience</a>
@@ -51,39 +51,43 @@
     </nav>
 
 
-    <!-- Introduction -->
-    <section id="home" class="intro-section">
-        <h1 class="intro-heading">Hello, I'm Man Vu.</h1>
-        <p class="intro-text">
-            Software Developer based in Ottawa, Ontario, Canada. Specializing in web
-            development and software engineering, I strive to create optimized and
-            scalable applications.
-        </p>
-        <a href="#about" class="btn btn-next-section mt-3">Next: About</a>
-    </section>
+<!-- Introduction -->
+<section id="home" class="intro-section">
+    <h1 class="intro-heading fade-in-up-animation">Hello, I'm Man Vu.</h1>
+    <p class="intro-text fade-in-up-animation">
+        Software Developer based in Ottawa, Ontario, Canada. Specializing in web development and software engineering, I strive to create optimized and scalable applications.
+    </p>
+    <a href="#about" class="fade-in-up-animation btn btn-next-section mt-3">Next: About</a>
+</section>
+
     <!-- Personal Overview -->
     <section id="about" class="my-5">
         <div class="card rounded">
             <div class="card-body">
                 <h2 class="card-title display-5">About</h2>
-                <p class="card-text lead">
+                <p class="card-text lead fade-in-up-animation">
                     With three years in the software industry and a profound enthusiasm for
                     web development, I’ve pursued and achieved two diplomas from Mohawk
                     College. My mission: architecting full-stack web solutions that are both
                     efficient and scalable.
                 </p>
-                <a href="#core-competentencies" class="btn btn-next-section mt-3">Next: Core Competencies</a>
-            </div>  
+                <div class="controls mb-5">
+                    <a href="#home" class="btn btn-next-section mt-3 fade-in-up-animation">Back: Home</a>
+
+                    <a href="#core-competencies" class="btn btn-next-section mt-3 fade-in-up-animation">Next: Core
+                        Competencies</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="core-competentencies">
-        <h2>Core Competentencies</h2>
+    <section id="core-competencies">
+        <h2>Core Competencies</h2>
 
         <!-- Technical Skills & Expertise -->
         <div id="skills" class="mb-5">
-            <h2 class="display-5 mb-4">Skills</h2>
-            <div>
+            <h3 class="display-5 mb-4">Skills</h3>
+            <div class="fade-in-up-animation">
                 <span class="badge badge-primary p-2 m-1">Project Management</span>
                 <span class="badge badge-success p-2 m-1">Web & Software Development</span>
                 <span class="badge badge-info p-2 m-1">UI Design & Quality Control</span>
@@ -94,8 +98,8 @@
 
         <!-- Programming Proficiencies -->
         <div id="languages" class="mb-5">
-            <h2 class="display-5 mb-4">Programming Languages</h2>
-            <div>
+            <h3 class="display-5 mb-4">Programming Languages</h3>
+            <div class="fade-in-up-animation">
                 <span class="badge badge-light p-2 m-1">HTML, CSS, CSS3</span>
                 <span class="badge badge-dark p-2 m-1">PHP, JavaScript, jQuery</span>
                 <span class="badge badge-danger p-2 m-1">Python, Java, Swift</span>
@@ -104,11 +108,11 @@
 
         <!-- Technology Stack -->
         <div id="technologies" class="mb-5">
-            <h2 class="display-5 mb-4">Technologies</h2>
+            <h3 class="display-5 mb-4">Technologies</h3>
 
             <!-- Databases -->
             <h4 class="mb-2">Databases:</h4>
-            <div>
+            <div class="fade-in-up-animation">
                 <span class="badge badge-primary p-2 m-1">MSSQL</span>
                 <span class="badge badge-primary p-2 m-1">MySQL</span>
                 <span class="badge badge-light p-2 m-1">SQL Server</span>
@@ -116,7 +120,7 @@
 
             <!-- Web Development -->
             <h4 class="mb-2 mt-4">Web Development:</h4>
-            <div>
+            <div class="fade-in-up-animation">
                 <span class="badge badge-success p-2 m-1">React</span>
                 <span class="badge badge-success p-2 m-1">Node.js</span>
                 <span class="badge badge-info p-2 m-1">Vue.js</span>
@@ -126,7 +130,7 @@
 
             <!-- Frameworks and Platforms -->
             <h4 class="mb-2 mt-4">Frameworks & Platforms:</h4>
-            <div>
+            <div class="fade-in-up-animation">
                 <span class="badge badge-warning p-2 m-1">.NET Core</span>
                 <span class="badge badge-danger p-2 m-1">ASP.NET</span>
                 <span class="badge badge-info p-2 m-1">WPF</span>
@@ -136,11 +140,17 @@
 
             <!-- Version Control -->
             <h4 class="mb-2 mt-4">Version Control:</h4>
-            <div>
+            <div class="fade-in-up-animation">
                 <span class="badge badge-light p-2 m-1">Git</span>
             </div>
         </div>
-        <a href="#experience" class="btn btn-next-section mt-3">Next: Experience</a>
+
+        <div class="controls mb-5">
+            <a href="#about" class="btn btn-next-section mt-3 fade-in-up-animation">Back: About</a>
+
+            <a href="#experience" class="btn btn-next-section mt-3 fade-in-up-animation">Next: Experience</a>
+        </div>
+        
     </section>
 
     <!-- Experience & Roles -->
@@ -159,62 +169,76 @@
             <!-- Key Projects and Achievements -->
             <h5>Key Projects and Achievements:</h5>
             <ul>
-                <li>Quickly responded to managed urgent fires and customer issues.</li>
-                <li>Enhanced efficiency and reduced load time of periodontal charting tab.</li>
-                <li>Utilized Test-Driven Development best practices to drive continuous improvement in features and
+                <li class="fade-in-left-animation">Quickly responded to managed urgent fires and customer issues.</li>
+                <li class="fade-in-left-animation">Enhanced efficiency and reduced load time of periodontal charting
+                    tab.</li>
+                <li class="fade-in-left-animation">Utilized Test-Driven Development best practices to drive continuous
+                    improvement in features and
                     usability.</li>
-                <li>Conducted rigorous investigation on customer data records to resolve production bugs; improved
+                <li class="fade-in-left-animation">Conducted rigorous investigation on customer data records to resolve
+                    production bugs; improved
                     integrity of data.</li>
-                <li>Authored a comprehensive developer manual, fostering quicker onboarding and heightening developer
+                <li class="fade-in-left-animation">Authored a comprehensive developer manual, fostering quicker
+                    onboarding and heightening developer
                     performance.</li>
-                <li>Vigilantly monitored and maintained server health ensuring optimal operation through Azure DevOps.
+                <li class="fade-in-left-animation">Vigilantly monitored and maintained server health ensuring optimal
+                    operation through Azure DevOps.
                 </li>
             </ul>
 
             <!-- Test-Driven Software Development -->
             <h5>Test-Driven Software Development:</h5>
             <ul>
-                <li>Demonstrated high flexibility and adaptability in a high-pressure and dynamic team environment.</li>
-                <li>Undertook work in diverse areas such as:
+                <li class="fade-in-left-animation">Demonstrated high flexibility and adaptability in a high-pressure and
+                    dynamic team environment.</li>
+                <li class="fade-in-left-animation">Undertook work in diverse areas such as:
                     <ul>
-                        <li>Portal development</li>
-                        <li>C/C++ legacy code</li>
-                        <li>Charting & clinical sectors</li>
-                        <li>Onboarding/updating script issues</li>
+                        <li class="fade-in-left-animation">Portal development</li>
+                        <li class="fade-in-left-animation">C/C++ legacy code</li>
+                        <li class="fade-in-left-animation">Charting & clinical sectors</li>
+                        <li class="fade-in-left-animation">Onboarding/updating script issues</li>
                     </ul>
                 </li>
-                <li>Showed significant technical growth, undertaking complex architectural tasks.</li>
-                <li>Collaborated with senior architects.</li>
+                <li class="fade-in-left-animation">Showed significant technical growth, undertaking complex
+                    architectural tasks.</li>
+                <li class="fade-in-left-animation">Collaborated with senior architects.</li>
             </ul>
 
             <!-- Requirements, Code and QC Reviews -->
             <h5>Requirements, Code, and QC Reviews:</h5>
             <ul>
-                <li>Consistently followed company processes for code and QC reviews.</li>
-                <li>Ensured high quality of completed work.</li>
-                <li>Provided QC teams with scripts for testing.</li>
-                <li>Documented investigative findings and answered relevant queries.</li>
+                <li class="fade-in-left-animation">Consistently followed company processes for code and QC reviews.</li>
+                <li class="fade-in-left-animation">Ensured high quality of completed work.</li>
+                <li class="fade-in-left-animation">Provided QC teams with scripts for testing.</li>
+                <li class="fade-in-left-animation">Documented investigative findings and answered relevant queries.</li>
             </ul>
 
             <!-- Tier 3 Defect Analysis -->
             <h5>Tier 3 Defect Analysis:</h5>
             <ul>
-                <li>Led the analysis of Tier 3 defects, which often required extensive investigation.</li>
-                <li>Employed creativity and innovation in finding optimal solutions.</li>
-                <li>Ensured thorough documentation of findings and thought processes to assist external teams and QA.
+                <li class="fade-in-left-animation">Led the analysis of Tier 3 defects, which often required extensive
+                    investigation.</li>
+                <li class="fade-in-left-animation">Employed creativity and innovation in finding optimal solutions.</li>
+                <li class="fade-in-left-animation">Ensured thorough documentation of findings and thought processes to
+                    assist external teams and QA.
                 </li>
             </ul>
 
             <!-- DevOps Duties -->
             <h5>DevOps and On-Call Duties:</h5>
             <ul>
-                <li>Undertook DevOps on-call responsibilities over the past year.</li>
-                <li>Addressed critical situations during off-hours, such as unexpected outages and release issues.</li>
-                <li>Efforts led to minimized downtime for the team and clients.</li>
-                <li>Ensured optimal data integrity and system performance.</li>
+                <li class="fade-in-left-animation">Undertook DevOps on-call responsibilities over the past year.</li>
+                <li class="fade-in-left-animation">Addressed critical situations during off-hours, such as unexpected
+                    outages and release issues.</li>
+                <li class="fade-in-left-animation">Efforts led to minimized downtime for the team and clients.</li>
+                <li class="fade-in-left-animation">Ensured optimal data integrity and system performance.</li>
             </ul>
         </div>
-        <a href="#projects" class="btn btn-next-section mt-3">Next: Projects</a>
+        <div class="controls mb-5">
+            <a href="#core-competencies" class="btn btn-next-section mt-3 fade-in-up-animation">Back: Core Competencies</a>
+
+            <a href="#projects" class="btn btn-next-section mt-3 fade-in-up-animation">Next: Projects</a>
+        </div>
         <!-- ... More Experience sections ... -->
     </section>
     <section id="projects">
@@ -227,44 +251,45 @@
             <h4>Productivity Application | ABELSoft Inc.</h4>
             <!-- Project Details -->
             <ul>
-                <li>
+                <li class="fade-in-left-animation">
                     <strong>Description:</strong>
                     Developed a standalone utility in C# to automate compiling and
                     resolution of conflicted doctor’s notes upon customer onboarding by
                     using Diff algorithm, saving significant time and human resources.
                 </li>
-                <li><strong>Technologies Used:</strong> C#, WinForm, OfficeXML, DiffPlex, MSSQL</li>
-                <li>
+                <li class="fade-in-left-animation"><strong>Technologies Used:</strong> C#, WinForm, OfficeXML, DiffPlex,
+                    MSSQL</li>
+                <li class="fade-in-left-animation">
                     <strong>Challenges & Achievements:</strong> Initially faced architectural challenges in 2020.
                     However, in 2023, with improved architectural understanding, I re-architected the solution, leading
                     to reusable code and enhanced maintainability.
                 </li>
-                <li>
+                <li class="fade-in-left-animation">
                     <strong>Impact:</strong> The utility revolutionized the clinical note resolution process, saving
                     significant time and resources. Post improvements in 2023, the diff algorithm enhanced readability,
                     aiding stakeholders in decision-making regarding note restoration. It positively impacted the entire
                     Development department.
                 </li>
-                <li>
+                <li class="fade-in-left-animation">
                     <strong>Contribution:</strong> I led the project. While another developer, Sean, initially
                     contributed an algorithm, my enhanced version replaced it. The new algorithm utilized C# for data
                     cleaning and classifying insert, update, and delete statements, over the original T-SQL based
                     approach.
                 </li>
-                <li>
+                <li class="fade-in-left-animation">
                     <strong>Feedback:</strong> The project received accolades from the CTO, development manager, and
                     team lead. A manager's commendation highlighted the project's impact, my technical prowess, and
                     problem-solving skills.
                 </li>
-                <li>
+                <li class="fade-in-left-animation">
                     <strong>Duration:</strong> Initially developed in a week. However, significant improvements were
                     made over 2-3 weeks, enhancing its efficiency and effectiveness.
                 </li>
-                <li>
+                <li class="fade-in-left-animation">
                     <strong>Learnings:</strong> Emphasized the importance of creativity in repetitive tasks and the
                     value of discussing opportunities with peers for enhanced ideation.
                 </li>
-                <li>
+                <li class="fade-in-left-animation">
                     <strong>Future Scope:</strong> Explored the integration of ChatGPT for note restoration
                     decision-making, but it was abandoned due to data privacy concerns.
                 </li>
@@ -274,22 +299,28 @@
             <h3>English Dictionary</h3>
             <h4>Data Crawler | Personal Project</h4>
             <ul>
-                <li>
+                <li class="fade-in-left-animation">
                     <strong>Description:</strong>
                     Developed a Python tool to crawl all word entries from renowned English dictionaries, namely
                     Cambridge, Oxford, and Longman. This tool was primarily built to accumulate a comprehensive dataset
                     for subsequent Natural Language Processing (NLP) endeavors.
                 </li>
-                <li><strong>Objective:</strong> To gather a rich dataset from reputable dictionaries for advanced
+                <li class="fade-in-left-animation"><strong>Objective:</strong> To gather a rich dataset from reputable
+                    dictionaries for advanced
                     linguistic research and NLP projects.</li>
-                <li><strong>Technologies Used:</strong> Python, Beautiful Soup, Requests, MongoDB.</li>
-                <li><strong>Methodology:</strong> Used web scraping techniques to target specific elements of the
+                <li class="fade-in-left-animation"><strong>Technologies Used:</strong> Python, Beautiful Soup, Requests,
+                    MongoDB.</li>
+                <li class="fade-in-left-animation"><strong>Methodology:</strong> Used web scraping techniques to target
+                    specific elements of the
                     dictionaries' web pages and store the retrieved information in a structured format.</li>
-                <li><strong>Challenges:</strong> Faced issues with dynamic content loading on some pages and implemented
+                <li class="fade-in-left-animation"><strong>Challenges:</strong> Faced issues with dynamic content
+                    loading on some pages and implemented
                     workarounds using asynchronous requests.</li>
-                <li><strong>Results:</strong> Successfully crawled over 100,000 word entries with pronunciation, word
+                <li class="fade-in-left-animation"><strong>Results:</strong> Successfully crawled over 100,000 word
+                    entries with pronunciation, word
                     usage examples, and synonyms/antonyms, providing a robust dataset for NLP tasks.</li>
-                <li><strong>Applications and Future Enhancements:</strong> This dataset can be used for linguistic
+                <li class="fade-in-left-animation"><strong>Applications and Future Enhancements:</strong> This dataset
+                    can be used for linguistic
                     research, building language models, or even creating a new dictionary application.</li>
                 <!-- You can continue adding more points as relevant -->
             </ul>
@@ -302,25 +333,31 @@
 
             <!-- Project Details -->
             <ul>
-                <li><strong>Technologies Used:</strong> Python, basic crawling techniques</li>
-                <li>
+                <li class="fade-in-left-animation"><strong>Technologies Used:</strong> Python, basic crawling techniques
+                </li>
+                <li class="fade-in-left-animation">
                     <strong>Description:</strong> Developed a Python-based data crawler to aggregate Writing and
                     Speaking questions from reputable IELTS sources. The questions are systematically categorized by
                     question types, topics, test dates, and themes, and are currently hosted on Notion.
                 </li>
-                <li>
+                <li class="fade-in-left-animation">
                     <strong>Impact:</strong> The project garnered immense attention from IELTS communities, amassing
                     over 20K reactions across different Facebook sources. This recognition transformed my online
                     presence, boosting my Facebook followers to over 5K.
                 </li>
-                <li>
+                <li class="fade-in-left-animation">
                     <strong>Learnings:</strong> Emphasized the importance of seizing opportunities to be innovative and
                     creative in the projects undertaken.
                 </li>
             </ul>
         </div>
 
-        <a href="#education" class="btn btn-next-section mt-3">Next: Education</a>
+        <div class="controls mb-5">
+            <a href="#experience" class="btn btn-next-section mt-3 fade-in-up-animation">Back: Experience</a>
+
+            <a href="#education" class="btn btn-next-section mt-3 fade-in-up-animation">Next: Education</a>
+        </div>
+        
     </section>
     </section>
 
@@ -334,18 +371,25 @@
                 <h4 class="card-subtitle mb-2 text-muted">Mohawk College</h4>
                 <span class="d-block mb-3">Jan 2019 - Aug 2021</span>
                 <ul>
-                    <li>Expedited graduation, completing a three-year program in just 2 years and 8 months due to
+                    <li class="fade-in-left-animation">Expedited graduation, completing a three-year program in just 2
+                        years and 8 months due to
                         exemplary performance.</li>
-                    <li>Graduated with honors, boasting a commendable GPA exceeding 90%.</li>
-                    <li>Focused coursework encompassed data structures & algorithms, machine learning, and cutting-edge
+                    <li class="fade-in-left-animation">Graduated with honors, boasting a commendable GPA exceeding 90%.
+                    </li>
+                    <li class="fade-in-left-animation">Focused coursework encompassed data structures & algorithms,
+                        machine learning, and cutting-edge
                         web development techniques.</li>
-                    <li>Hands-on experience with technologies like AWS, .NET Core, SQL Databases, Node.js, React,
+                    <li class="fade-in-left-animation">Hands-on experience with technologies like AWS, .NET Core, SQL
+                        Databases, Node.js, React,
                         Angular, and Vue.</li>
-                    <li>Academic achievements included perfect scores in data structures & algorithms and front-end web
+                    <li class="fade-in-left-animation">Academic achievements included perfect scores in data structures
+                        & algorithms and front-end web
                         development, along with a near-perfect score in machine learning.</li>
-                    <li>Actively participated in Hamilton JavaScript meetups and The New Developers’ (TND) community
+                    <li class="fade-in-left-animation">Actively participated in Hamilton JavaScript meetups and The New
+                        Developers’ (TND) community
                         events.</li>
-                    <li>Underwent three enriching co-op terms and secured an 8-month contract with ABELSoft,
+                    <li class="fade-in-left-animation">Underwent three enriching co-op terms and secured an 8-month
+                        contract with ABELSoft,
                         contributing significantly to real-world projects.</li>
                 </ul>
             </div>
@@ -368,10 +412,12 @@
                 <span class="d-block mb-3">2016 - 2017</span>
                 <p class="card-text">Grade: 3.80</p>
                 <ul>
-                    <li>Acquired a robust foundation in programming languages including Assembly, C, and C++.</li>
-                    <li>Explored advanced concepts in C++ such as pointers, memory management, and object-oriented
+                    <li class="fade-in-left-animation">Acquired a robust foundation in programming languages including
+                        Assembly, C, and C++.</li>
+                    <li class="fade-in-left-animation">Explored advanced concepts in C++ such as pointers, memory
+                        management, and object-oriented
                         design patterns.</li>
-                    <li>Achieved an outstanding grade of 96% in C++ programming.</li>
+                    <li class="fade-in-left-animation">Achieved an outstanding grade of 96% in C++ programming.</li>
                 </ul>
             </div>
         </div>
@@ -395,85 +441,127 @@
         <div id="awards" class="my-5">
             <h2>Honors & Awards</h2>
             <ul class="list-group">
-                <li class="list-group-item">Dean's Honours List (x5)</li>
-                <li class="list-group-item">Awarded 2021 guard.me Post-secondary Scholarship for Academic Excellence
+                <li class="list-group-item fade-in-left-animation">Dean's Honours List (x5)</li>
+                <li class="list-group-item fade-in-left-animation">Awarded 2021 guard.me Post-secondary Scholarship for
+                    Academic Excellence
                 </li>
             </ul>
         </div>
 
-        <a href="#certifications" class="btn btn-next-section mt-3">Next: Certifications</a>
+        <div class="controls mb-5">
+            <a href="#projects" class="btn btn-next-section mt-3 fade-in-up-animation">Back: Projects</a>
+
+            <a href="#certifications" class="btn btn-next-section mt-3 fade-in-up-animation">Next: Certifications</a>
+        </div>
+        
     </section>
 
 
     <!-- Certifications -->
-    <section id="certifications" class=" mt-5">
+    <section id="certifications" class="mt-5">
         <h2 class="mb-4">Certifications</h2>
 
-        <div class="card mb-3">
+        <!-- IELTS Academic -->
+        <div class="card mb-3 fade-in-up-animation">
             <div class="card-body">
-                <h3 class="card-title"><i class="material-icons">language</i> IELTS Academic 8.0 Overall</h3>
-                <p class="card-text">British Council IELTS (International English Language Testing System)</p>
-                <span class="d-block mb-2">Issued: Jun 2023 · Expires: Jun 2025</span>
-                <p>Credential ID: 23VN502945VUM028A</p>
-                <p>Skills: Communication, English</p>
+                <h3 class="card-title"><i class="material-icons">language</i> IELTS Academic 8.0/9.0 Overall</h3>
+                <p>A standardized test for English language proficiency for non-native English language speakers for
+                    post-secondary education.</p>
+                <p class="card-text"><strong>Issuing Authority</strong>: British Council IELTS (International English
+                    Language Testing System)</p>
+                <p><strong>Issued</strong>: Jun 2023 · <strong>Expires</strong>: Jun 2025</p>
+                <p><strong>Credential ID</strong>: 23VN502945VUM028A</p>
+                <p><strong>Skills</strong>: Academic Studies, Communication, English, Linguistics, Listening, Reading,
+                    Writing, Speaking</p>
             </div>
         </div>
 
-        <div class="card mb-3">
+        <!-- IELTS General Training -->
+        <div class="card mb-3 fade-in-up-animation">
             <div class="card-body">
-                <h3 class="card-title"><i class="material-icons">language</i> IELTS General Training 8.5 Overall</h3>
-                <p class="card-text">British Council IELTS (International English Language Testing System)</p>
-                <span class="d-block mb-2">Issued: Apr 2023 · Expires: Apr 2025</span>
-                <p>Credential ID: 23VN500280VUM028G</p>
-                <p>Skills: Communication</p>
+                <h3 class="card-title"><i class="material-icons">language</i> IELTS General Training 8.5/9.0 Overall
+                </h3>
+                <p>Designed for those migrating to English speaking countries for secondary education, work or training
+                    programs.</p>
+                <p class="card-text"><strong>Issuing Authority</strong>: British Council IELTS (International English
+                    Language Testing System)</p>
+                <p><strong>Issued</strong>: Apr 2023 · <strong>Expires</strong>: Apr 2025</p>
+                <p><strong>Credential ID</strong>: 23VN500280VUM028G</p>
+                <p><strong>Skills</strong>: Workplace Communication, English, Linguistics, Listening, Reading, Writing,
+                    Speaking</p>
             </div>
         </div>
 
-        <div class="card mb-3">
+        <!-- The Complete Junior to Senior Web Developer Roadmap -->
+        <div class="card mb-3 fade-in-up-animation">
             <div class="card-body">
                 <h3 class="card-title"><i class="material-icons">computer</i> The Complete Junior to Senior Web
                     Developer Roadmap (2021)</h3>
-                <p class="card-text">Udemy</p>
-                <span class="d-block mb-2">Issued: Sep 2021</span>
-                <p>Credential ID: UC-73553207-52c3-4dba-b6ef-a3a01abee3b9</p>
+                <p>A comprehensive guide to mastering skills required to move from a junior to senior web developer.</p>
+                <p class="card-text"><strong>Issuing Authority</strong>: Udemy</p>
+                <p><strong>Issued</strong>: Sep 2021</p>
+                <p><strong>Credential ID</strong>: UC-73553207-52c3-4dba-b6ef-a3a01abee3b9</p>
+                <p><strong>Skills</strong>: Web Development, Frontend, Backend, Databases, Security, Performance
+                    Optimization, Continuous Integration</p>
             </div>
         </div>
 
-        <div class="card mb-3">
+        <!-- Machine Learning & Data Science -->
+        <div class="card mb-3 fade-in-up-animation">
             <div class="card-body">
                 <h3 class="card-title"><i class="material-icons">computer</i> Machine Learning & Data Science</h3>
-                <p class="card-text">Udemy</p>
-                <span class="d-block mb-2">Issued: Aug 2021</span>
-                <p>Credential ID: UC-24365787-8e5d-41da-8928-2618dff216c8</p>
+                <p>An in-depth course on machine learning, data science, and the techniques and tools used in the field.
+                </p>
+                <p class="card-text"><strong>Issuing Authority</strong>: Udemy</p>
+                <p><strong>Issued</strong>: Aug 2021</p>
+                <p><strong>Credential ID</strong>: UC-24365787-8e5d-41da-8928-2618dff216c8</p>
+                <p><strong>Skills</strong>: Machine Learning, Data Science, Python, Algorithms, Neural Networks,
+                    Tensorflow, Keras, Data Visualization</p>
             </div>
         </div>
 
-        <div class="card mb-3">
+        <!-- Microsoft Project 2019 and Project Online Desktop Essential Training -->
+        <div class="card mb-3 fade-in-up-animation">
             <div class="card-body">
                 <h3 class="card-title"><i class="material-icons">desktop_windows</i> Microsoft Project 2019 and Project
                     Online Desktop Essential Training</h3>
-                <p class="card-text">LinkedIn</p>
-                <span class="d-block mb-2">Issued: Sep 2020</span>
+                <p>Training for mastering the essentials of Microsoft Project 2019 and Project Online Desktop.</p>
+                <p class="card-text"><strong>Issuing Authority</strong>: LinkedIn</p>
+                <p><strong>Issued</strong>: Sep 2020</p>
+                <p><strong>Skills</strong>: Project Management, MS Project, Task Scheduling, Resource Allocation,
+                    Reporting, Project Tracking</p>
             </div>
         </div>
 
-        <div class="card mb-3">
+        <!-- Full Stack Developer Certification -->
+        <div class="card mb-3 fade-in-up-animation">
             <div class="card-body">
                 <h3 class="card-title"><i class="material-icons">layers</i> Full Stack Developer Certification</h3>
-                <p class="card-text">freeCodeCamp</p>
-                <span class="d-block mb-2">Issued: Dec 2018</span>
+                <p>Certification for mastering both frontend and backend development, covering all stages of web
+                    development.</p>
+                <p class="card-text"><strong>Issuing Authority</strong>: freeCodeCamp</p>
+                <p><strong>Issued</strong>: Dec 2018</p>
+                <p><strong>Skills</strong>: Web Development, JavaScript, Node.js, Express.js, React, MongoDB, RESTful
+                    APIs, Databases, Frontend, Backend</p>
             </div>
         </div>
-        <a href="#contact" class="btn btn-next-section mt-3">Next: Contact</a>
+
+        <div class="controls mb-5">
+            <a href="#education" class="btn btn-next-section mt-3 fade-in-up-animation">Back: Education</a>
+
+            <a href="#contact" class="btn btn-next-section mt-3 fade-in-up-animation">Next: Contact</a>
+        </div>
     </section>
 
+
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="fade-in-up-animation">
         <h2>Reach Out</h2>
         <p><span class="material-icons">phone</span> +1-226-971-9048</p>
         <p><span class="material-icons">email</span> <a href="mailto:manvminh@gmail.com">manvminh@gmail.com</a></p>
         <p><span class="material-icons">link</span> <a href="https://linkedin.com/in/manvu">Connect on LinkedIn</a></p>
         <p><span class="material-icons">language</span> <a href="https://manvu.me/">Visit My Personal Website</a></p>
+        <a href="#certifications" class="btn btn-next-section mt-3 fade-in-up-animation">Back: Certifications</a>
     </section>
 
     <!-- Optional Footer -->
