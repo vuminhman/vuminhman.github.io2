@@ -1,4 +1,4 @@
-window.onscroll = function() {
+window.onscroll = function () {
     handleScroll();
 };
 
@@ -10,32 +10,20 @@ function handleScroll() {
     }
 }
 
-$(document).ready(function() {
-    
-    // Functionality for the navbar links
-    $("#sticky-navbar a.nav-link").click(function(event) {
-        
-        // Prevent the default action (i.e., jumping to the section)
-        event.preventDefault();
-        
-        // Smoothly scroll to the top
-        $("html, body").animate({ scrollTop: 0 }, "slow");
+$(document).ready(function () {
 
-        // Hide all sections
-        $("section").hide();
 
-        // Show the targeted section
-        $($(this).attr("href")).show();
-    });
 
     // Functionality for the next section buttons
-    $(".btn-next-section").click(function(event) {
-        
+    $(".btn-next-section").click(function (event) {
+
         // Prevent the default action (i.e., jumping to the section)
         event.preventDefault();
-        
+
         // Smoothly scroll to the top
-        $("html, body").animate({ scrollTop: 0 }, "slow");
+        $("html, body").animate({
+            scrollTop: 0
+        }, "slow");
 
         // Hide all sections
         $("section").hide();
@@ -44,23 +32,82 @@ $(document).ready(function() {
         $($(this).attr("href")).show();
     });
 
-     // Collapse navbar when a link is clicked
-     $("#sticky-navbar a.nav-link").on("click", function() {
+    // Collapse navbar when a link is clicked
+    $("#sticky-navbar a.nav-link").on("click", function () {
         if ($('.navbar-toggler').is(':visible')) {
             $('.navbar-toggler').trigger('click');
         }
     });
 
     // Collapse navbar when clicking outside of it
-    $(document).on('click', function(event){
+    $(document).on('click', function (event) {
         var $navbar = $("#sticky-navbar");
-        
+
         // Check if click was triggered on or within #navbar
-        if(!$(event.target).closest($navbar).length) {
+        if (!$(event.target).closest($navbar).length) {
             // Check if navbar is expanded
-            if($navbar.find('.navbar-collapse').hasClass('show')) {
+            if ($navbar.find('.navbar-collapse').hasClass('show')) {
                 $navbar.find('.navbar-toggler').trigger('click');
             }
         }
+    });
+});
+
+
+// jQuery example for toggling content
+$(document).ready(function () {
+    $(".toggle-btn").click(function () {
+        $(this).siblings(".project-details").toggleClass("hidden");
+        const arrow = $(this).find(".arrow");
+        if (arrow.text() === "▼") {
+            arrow.text("▲");
+        } else {
+            arrow.text("▼");
+        }
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const collToggleButtons = document.querySelectorAll('.collapsible-toggle');
+
+    collToggleButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const content = this.nextElementSibling;
+            const arrow = this.querySelector('.arrow');
+
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                arrow.innerHTML = '&#9660;'; // Downward arrow when content is hidden
+            } else {
+                content.style.display = 'block';
+                arrow.innerHTML = '&#9650;'; // Upward arrow when content is shown
+            }
+        });
+    });
+});
+
+$(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
     });
 });

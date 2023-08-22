@@ -1,23 +1,119 @@
+/* General Styles */
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1e1e2d; /* Dark Background */
-    color: #d1d1e0; /* Light text for contrast */
+    background-color: #1e1e2d;
+    color: #d1d1e0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Use viewport height to ensure full coverage */
+    min-height: 100vh;
+    line-height: 1.6;
+    /* Added for better readability */
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    /* Responsive font sizing */
+    font-weight: 400;
+    /* Normal body text weight */
 }
 
-body {
-
+a {
+    color: #c084fc;
+    text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+    color: #f5d4ff;
+    /* Updated for better hover effect */
+    transition: color 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+/* Heading Styles */
+h1,
+h2,
+h3 {
+    color: #c084fc;
+    margin-top: 0;
+    letter-spacing: 1px;
+    /* Added for aesthetics */
+    text-transform: uppercase;
+    /* Added for design appeal */
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    /* Responsive font sizing */
+    font-weight: 700;
+    /* Bold weight for primary heading */
+}
+
+h2,
+h3 {
+    font-weight: 600;
+    /* Semi-bold weight for other headings */
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    /* Responsive font sizing */
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+li {
+    background-color: #3f3f4f;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1e1e2d;
+    color: #a1a1b0;
+    margin-top: auto;
+}
+
+/* Component-Based Styles */
+
+/* Certifications */
 #certifications {
-    background-color: #282843; /* Dark purple shade */
+    background-color: #282843;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Sections */
+section {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(145deg, #282843, #1e1e2d);
+    border-radius: 5px;
+}
+
+#home {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #c084fc;
+    color: #1e1e2d;
+    display: block;
+}
+
+#about,
+#skills,
+#projects,
+#experience,
+#contact {
+    margin-bottom: 40px;
 }
 
 section h2 {
@@ -33,7 +129,7 @@ section h2 {
     border: 1px solid #3f3f4f;
     border-radius: 5px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .certification h3 {
@@ -56,73 +152,38 @@ section h2 {
     background-color: #282843;
 }
 
-section {
-    max-width: 960px;
-    margin: 40px auto;
-    padding: 20px;
-    background: linear-gradient(145deg, #282843, #1e1e2d);
-    border-radius: 5px;
-}
-
-h1, h2, h3 {
-    color: #c084fc; /* Brighter Purple for Headings */
-    margin-top: 0;
-}
-
-#home {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #c084fc; /* Brighter Purple */
-    color: #1e1e2d;
-}
-
-#about, #skills, #projects, #experience, #contact {
-    margin-bottom: 40px;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-li {
-    background-color: #3f3f4f; /* Slightly lighter than the background */
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #1e1e2d; /* Matching with body background */
-    color: #a1a1b0;
-}
-
-@media (max-width: 768px) {
-    section {
-        margin: 20px 10px;
-    }
-}
-
-a {
-    color: #c084fc; /* Purple link color */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #e1a1fc; /* Lighter purple for hover */
-}
-
-.job, .education-item {
+/* Job and Education Items */
+.job,
+.education-item {
     margin-bottom: 20px;
 }
 
-/* Bootstrap Card Styling */
+/* Navbar */
+#sticky-navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.5s;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #FFD700;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Bootstrap Card Styles */
 .card {
-    background-color: #282843; /* Dark purple shade */
+    background-color: #282843;
     border: none;
     margin-bottom: 20px;
 }
@@ -131,11 +192,20 @@ a:hover {
     padding: 20px;
 }
 
-.card-title, .card-subtitle {
-    color: #c084fc; /* Brighter Purple */
+.card-title,
+.card-subtitle {
+    color: #c084fc;
 }
 
-/* List Group Styling */
+.card a {
+    color: #a1a1b0;
+}
+
+.card a:hover {
+    text-decoration: underline;
+    color: #c084fc;
+}
+
 .list-group-item {
     background-color: #1e1e2d;
     border: none;
@@ -146,41 +216,29 @@ a:hover {
     background-color: #3f3f4f;
 }
 
-/* Jumbotron Styling */
 .jumbotron {
     padding: 60px 30px;
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Material UI Icons */
 .material-icons {
     vertical-align: middle;
     margin-right: 5px;
-    color: #c084fc; /* Brighter Purple */
+    color: #c084fc;
 }
 
-/* Adjust link styles within a card */
-.card a {
-    color: #a1a1b0; /* Link color inside cards */
-}
-
-.card a:hover {
-    text-decoration: underline;
-    color: #c084fc; /* Purple link color for hover inside cards */
-}
-
-/* Introduction Styling */
+/* Introduction Section */
 .intro-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(145deg, #282843, #1e1e2d);
-    color: #c084fc; /* Purple to match your theme */
+    color: #c084fc;
     padding: 5em 0;
     position: relative;
-    overflow: hidden; /* To ensure animation stays within the section */
+    overflow: hidden;
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
@@ -193,24 +251,35 @@ a:hover {
 .intro-text {
     color: #fff;
     font-size: 1.2em;
-    max-width: 800px;
     text-align: center;
-
 }
 
-.fade-in-up-animation {
-    opacity: 0; /* Initially invisible */
-    transform: translateY(30px); /* Initially moved down */
-    animation: fadeInUp 1.2s forwards 0.3s; /* Slower animation and increased delay for smoother effect */
+.btn-next-section {
+    margin: auto;
+    background-color: #6c19bfb8;
+    color: #fff !important;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
-.fade-in-left-animation {
-    opacity: 0; /* Initially invisible */
-    transform: translateX(30px); /* Initially moved down */
-    animation: fadeInUp 1.2s forwards 0.3s; /* Slower animation and increased delay for smoother effect */
+.btn-next-section:hover {
+    background-color: #7e17ed;
+    color: #fef8f8 !important;
 }
 
-/* Animation */
+.controls {
+    display: none;
+    justify-content: space-between;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    section {
+        margin: 20px 10px;
+    }
+}
+
+/* Animations */
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -225,54 +294,190 @@ a:hover {
     }
 }
 
-#sticky-navbar {
-    position: -webkit-sticky; /* for Safari */
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* to ensure it appears on top of other elements */
-    transition: all 0.5s; /* smooth transition for any changes */
+.fade-in-up-animation {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.2s forwards 0.3s;
 }
 
-footer {
-    margin-top: auto; /* Push footer to the bottom */
+.fade-in-left-animation {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: fadeInUp 1.2s forwards 0.3s
 }
 
-section {
+/* CSS */
+
+/* ...existing CSS... */
+
+/* Projects Section */
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project {
+    background-color: #282843;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 15px;
+    transition: all 0.3s ease;
+    color: #d1d1e0;
+    /* default color for project content */
+}
+
+.project:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.toggle-btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #e1a1fc;
+    /* lighter color for toggleable title */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+    color: #f5d4ff;
+    /* even lighter color for hover state */
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.project-details {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.project h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #d1d1e0;
+}
+
+.project li {
+    margin: 10px 0;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.project li:hover {
+    background-color: #4f4f5f;
+}
+
+.hidden {
     display: none;
 }
 
-#home {
-    display: block; /* Ensure the home section is displayed initially */
+.collapsible-section {
+    margin-bottom: 1em;
 }
 
-.btn-next-section {
-    margin: auto;
-    background-color: #6c19bfb8; /* Dark Purple */
-    color: #fff !important; /* White */
-    border: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn-next-section:hover {
-    background-color: #7e17ed; /* Darker Purple */
-    color: #fef8f8 !important;
-}
-
-.controls {
+.collapsible-toggle {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #7716d8;
+    color: white;
+    padding: 0.5em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
 }
 
-.navbar-brand {
-    font-family: 'Poppins', sans-serif; /* Using the Poppins font, but you can choose any font you like */
-    font-size: 24px; /* Increase the font size */
-    font-weight: 600; /* Make it semi-bold */
-    letter-spacing: 1px; /* Add some letter spacing */
-    color: #FFD700; /* A gold color, but you can choose any color you like */
-    transition: color 0.3s ease; /* Smooth transition for hover effects */
+.arrow {
+    /* ... other styles ... */
+    margin-left: auto;
+    /* pushes the arrow to the far right */
 }
 
-.navbar-brand:hover {
-    color: #FFFFFF; /* Change color on hover */
-    text-decoration: none; /* Remove underline on hover */
+
+.collapsible-content {
+    display: none;
+    overflow: hidden;
+    padding: 0.5em;
 }
+
+.skill-section {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.skill-section:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.skill-badge .badge {
+    margin: 8px;
+    padding: 14px 18px;  /* Increased padding */
+    font-size: 16px;  /* Increased font size */
+    font-weight: 600;  /* Bolder text */
+    color: #ffffff;  /* Text color set to white */
+}
+
+/* Specific changes for badges where the text color needed improvement */
+.skill-badge .badge-light {
+    color: #333333;  /* Dark text for better contrast */
+}
+
+.skill-badge .badge-dark {
+    color: #ffffff;  /* Light text for better contrast */
+}
+
+.skill-badge .badge:hover {
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.tech-subsection {
+    margin-bottom: 16px;
+}
+
+/* Font Awesome Icons */
+.fas {
+    margin-right: 10px;
+}
+
+.about-content {
+    line-height: 1.7;
+    font-size: 1.2em;
+    /* color: #333; */
+    padding: 20px;
+    border-radius: 8px;
+    /* background: #f9f9f9; */
+  }
+  
+  .about-content strong {
+    font-weight: 600;
+    color: rgb(213 0 255);
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 30px;
+  }
+  
+  .card-title {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .fade-in-up-animation {
+    /* Your existing animation styles here */
+  }
+  
