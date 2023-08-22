@@ -481,3 +481,20 @@ section h2 {
     /* Your existing animation styles here */
   }
   
+  .show-credential-btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid rgb(213 0 255);
+    color: rgb(213 0 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 50px; /* This makes it rounded */
+    font-size: 16px;
+}
+
+.show-credential-btn:hover {
+    background-color: rgb(213 0 255);
+    color: white;
+}
