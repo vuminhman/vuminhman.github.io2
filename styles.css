@@ -198,12 +198,11 @@ section h2 {
 }
 
 .card a {
-    color: #a1a1b0;
 }
 
 .card a:hover {
     text-decoration: underline;
-    color: #c084fc;
+
 }
 
 .list-group-item {
@@ -474,7 +473,6 @@ section h2 {
   
   .card-title {
     margin-bottom: 20px;
-    font-size: 2em;
   }
   
   .fade-in-up-animation {
@@ -497,4 +495,27 @@ section h2 {
 .show-credential-btn:hover {
     background-color: rgb(213 0 255);
     color: white;
+}
+
+.highlight {
+    /* background-color: yellow; */
+    font-weight: bold;
+}
+
+
+.honors-and-gpa .highlight {
+    font-weight: bold;
+    color: #007bff; /* You can change this to any color you prefer */
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
 }
