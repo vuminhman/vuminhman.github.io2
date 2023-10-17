@@ -53,6 +53,14 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function() {
+    $('.nav-item').on('click', function() {
+        $('.nav-item').removeClass('nav-item-active');
+        $(this).addClass('nav-item-active');
+    });
+});
+
+
 
 // jQuery example for toggling content
 $(document).ready(function () {
@@ -99,10 +107,13 @@ $(document).ready(function () {
             // Store hash
             var hash = this.hash;
 
+            // Calculate offset top including margin (in this example, 50px for the navbar)
+            var targetOffsetTop = $(hash).offset().top;  // Adjust this value as needed
+
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
-                scrollTop: $(hash).offset().top
+                scrollTop: targetOffsetTop
             }, 800, function () {
 
                 // Add hash (#) to URL when done scrolling (default click behavior)

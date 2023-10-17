@@ -181,6 +181,26 @@ section h2 {
     text-decoration: none;
 }
 
+/* Making nav-item round and transparent */
+.nav-item {
+    border-radius: 25px;  /* This makes the item round */
+    background-color: transparent !important; /* This makes the item transparent */
+    margin: 0 5px;  /* Optional: add some margin between each item */
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #7e17ed !important;
+    color: #fef8f8 !important;
+}
+
+.nav-item-active {
+    background-color: #7e17ed !important;
+    color: #fef8f8 !important;
+}
+
+
+
 /* Bootstrap Card Styles */
 .card {
     background-color: #282843;
@@ -479,7 +499,7 @@ section h2 {
     /* Your existing animation styles here */
   }
   
-  .show-credential-btn {
+  .show-credential-btn, .show-projects-btn {
     display: inline-block;
     background-color: transparent;
     border: 2px solid rgb(213 0 255);
@@ -492,7 +512,7 @@ section h2 {
     font-size: 16px;
 }
 
-.show-credential-btn:hover {
+.show-credential-btn:hover, .show-projects-btn:hover {
     background-color: rgb(213 0 255);
     color: white;
 }
